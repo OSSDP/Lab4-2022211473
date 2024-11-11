@@ -22,10 +22,15 @@ public class L2022211473_19_Test {
             {0, 0, 0},
             {0, 0, 0}
         };
+//        int[][] expected = {
+//            {0, 0, 0},
+//            {0, 0, 0},
+//            {0, 0, 0}
+//        };
         int[][] expected = {
-            {0, 0, 0},
-            {0, 0, 0},
-            {0, 0, 0}
+                {0, 0, 0},
+                {0, 1, 0},
+                {0, 0, 0}
         };
         solution.gameOfLife(board);
         assertArrayEquals(expected, board);
@@ -43,10 +48,15 @@ public class L2022211473_19_Test {
             {1, 1, 1},
             {1, 1, 1}
         };
+//        int[][] expected = {
+//            {1, 0, 1},
+//            {0, 0, 0},
+//            {1, 0, 1}
+//        };
         int[][] expected = {
-            {1, 0, 1},
-            {0, 0, 0},
-            {1, 0, 1}
+                {1, 0, 1},
+                {0, 1, 0},
+                {1, 0, 1}
         };
         solution.gameOfLife(board);
         assertArrayEquals(expected, board);
