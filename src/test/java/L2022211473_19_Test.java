@@ -16,7 +16,7 @@ public class L2022211473_19_Test {
      */
     @Test
     public void gameOfLife_allDeadCells() {
-        Solution solution = new Solution();
+        Solution19 solution = new Solution19();
         int[][] board = {
             {0, 0, 0},
             {0, 0, 0},
@@ -37,7 +37,7 @@ public class L2022211473_19_Test {
      */
     @Test
     public void gameOfLife_allLiveCells() {
-        Solution solution = new Solution();
+        Solution19 solution = new Solution19();
         int[][] board = {
             {1, 1, 1},
             {1, 1, 1},
@@ -58,7 +58,7 @@ public class L2022211473_19_Test {
      */
     @Test
     public void gameOfLife_singleLiveCell() {
-        Solution solution = new Solution();
+        Solution19 solution = new Solution19();
         int[][] board = {
             {0, 0, 0},
             {0, 1, 0},
@@ -79,7 +79,7 @@ public class L2022211473_19_Test {
      */
     @Test
     public void gameOfLife_blinkerPattern() {
-        Solution solution = new Solution();
+        Solution19 solution = new Solution19();
         int[][] board = {
             {0, 1, 0},
             {0, 1, 0},
@@ -100,7 +100,7 @@ public class L2022211473_19_Test {
      */
     @Test
     public void gameOfLife_blockPattern() {
-        Solution solution = new Solution();
+        Solution19 solution = new Solution19();
         int[][] board = {
             {1, 1},
             {1, 1}
@@ -119,7 +119,7 @@ public class L2022211473_19_Test {
      */
     @Test(expected = ArrayIndexOutOfBoundsException.class)
     public void gameOfLife_edgeCaseEmptyBoard() {
-        Solution solution = new Solution();
+        Solution19 solution = new Solution19();
         int[][] board = {};
         try {
             solution.gameOfLife(board);
@@ -135,7 +135,7 @@ public class L2022211473_19_Test {
      */
     @Test
     public void gameOfLife_edgeCaseSingleCellAlive() {
-        Solution solution = new Solution();
+        Solution19 solution = new Solution19();
         int[][] board = {
             {1}
         };
@@ -152,7 +152,7 @@ public class L2022211473_19_Test {
      */
     @Test
     public void gameOfLife_edgeCaseSingleCellDead() {
-        Solution solution = new Solution();
+        Solution19 solution = new Solution19();
         int[][] board = {
             {0}
         };
